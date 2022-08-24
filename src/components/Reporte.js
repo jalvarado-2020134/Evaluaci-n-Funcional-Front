@@ -4,6 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Reporte = () => {
   const [usuarios, setUsuarios] = useState([]);
@@ -27,6 +28,12 @@ const Reporte = () => {
     <>
       <Navbar />
       <br />
+      <Link className="nav-link" to="/">
+      <button className="m-3 text-left btn btn-danger">
+        Regresar
+      </button>
+      </Link>
+      <br></br>
       <MDBTable className="tabla">
         <MDBTableHead>
           <tr className="table-info">

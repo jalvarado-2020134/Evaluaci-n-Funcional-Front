@@ -51,12 +51,12 @@ const Inicio = () => {
                   <ul className="dropdown-menu">
                     <li>
                       <Link to={"/reportes"}>
-                        <button className="dropdown-item">Por edades</button>
+                        <button className="dropdown-item">Ordenador por Edad</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={"/reporteFechas"}>
-                        <button className="dropdown-item">Por fecha de registro</button>
+                        <button className="dropdown-item">Ordenados por Fecha</button>
                       </Link>
                     </li>
                     <li>
@@ -66,7 +66,7 @@ const Inicio = () => {
                         data-bs-target="#exampleModal"
                         className="dropdown-item"
                       >
-                        Por género de poesía.
+                        Ordenados por Genero de Poesia
                       </button>
                     </li>
                     <li>
@@ -76,7 +76,7 @@ const Inicio = () => {
                         data-bs-target="#exampleModal1"
                         className="dropdown-item"
                       >
-                        Por carrera
+                        Ordenados por Carrera
                       </button>
                     </li>
                   </ul>
@@ -97,7 +97,7 @@ const Inicio = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">
-                Selecciona un tipo de poesía
+                Selecciona un genero de poesía
               </h5>
             </div>
             <div className="modal-body">
@@ -174,7 +174,7 @@ const Inicio = () => {
                   Selecciona una carrera
                 </option>
                 <option value={"Ingenieria"}>Ingenieria</option>
-                <option value={"Administración"}>Administración"</option>
+                <option value={"Administración"}>Administración</option>
                 <option value={"Derecho"}>Derecho</option>
                 <option value={"Medicina"}>Medicina</option>
               </select>
